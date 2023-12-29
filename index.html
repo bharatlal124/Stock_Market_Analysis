@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Stock Market Analysis</title>
+    </head>
+    <body>
+        <h1 id="head">Stock Market Analysis</h1>
+        <div id="container">
+            <div class="chart-section">
+                <div id="stock-chart"></div>
+                <div class="chart-buttons">
+                    <button onclick="displayChartbtn('1mo')" id="btn1">1
+                        Month</button>
+                    <button onclick="displayChartbtn('3mo')" id="btn2">3
+                        Months</button>
+                    <button onclick="displayChartbtn('1y')" id="btn3">1
+                        year</button>
+                    <button onclick="displayChartbtn('5y')" id="btn4">5
+                        years</button>
+                </div>
+            </div>
+            <div class="list-section" id="stock-list"></div>
+        </div>
+        <div class="detail-section" id="stock-details"></div>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
